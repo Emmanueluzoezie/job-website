@@ -1,0 +1,73 @@
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.login-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-item > img {
+    height: 40vmin;
+    width: 500px;
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .login-item > img {
+      animation: App-logo-float infinite 3s ease-in-out;
+    }
+}
+  
+@keyframes App-logo-float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+.login-item > button{
+    background-color: rgb(0, 128, 255);
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding:10px 0px;
+    margin:10px 0px;
+}
+
+.login-item > p{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px;
+    margin:0px;
+    text-align: center;
+}
+
+.login-item > button:hover{
+    /* width: 100%; */
+    background-color: rgb(17, 99, 240);
+}
+
+@media only screen and (max-width: 768px){
+    .login-item > img{
+        width: 250px;
+    }
+    .login-item > button{
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    .login-item > p{
+        font-size: 20px;
+    }
+}
